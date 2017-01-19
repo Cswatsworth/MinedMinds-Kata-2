@@ -1,1 +1,3 @@
-Mined_Minds_test.rb
+def mined_minds_function(number)
+	1
+end
