@@ -1,8 +1,6 @@
 require 'minitest/autorun'
 require_relative 'functions.rb'
-	def mined_minds_function(number)
-		number
-	end
+	
 
 class TestMMFunctions < Minitest::Test
 	def test_one_equals_one()
@@ -14,5 +12,8 @@ class TestMMFunctions < Minitest::Test
 	end
 	def test_pass_2_to_mined_minds_function_returns_2
 		assert_equal(2, mined_minds_function(2))
+	end
+	def test_pass_2_to_mined_minds_function_returns_mined
+		assert_equal('mined', mined_minds_function(3))
 	end
 end
